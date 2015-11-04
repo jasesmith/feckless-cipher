@@ -1,0 +1,25 @@
+{
+  "name": "feckless-cipher",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jasesmith/feckless-cipher",
+  "authors": [
+    "Jase <jase@star29.com>"
+  ],
+  "description": "An AngularJS + CSS Calculator experiment",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "The Unlicense",
+  "ignore": [
+    "**/.*",
+    "*codekit*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jamfu": "https://github.com/jasesmith/jamfu.git"
+  }
+}

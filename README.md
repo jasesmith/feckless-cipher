@@ -1,2 +1,2 @@
 # feckless-cipher
-An CSS Calculator experiment
+An AngularJS + CSS Calculator experiment
