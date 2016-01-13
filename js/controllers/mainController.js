@@ -1,9 +1,9 @@
-(function($angular, $moment, _) {
+(function($angular) {
     'use strict';
 
     $angular.module('app')
-    .controller('mainController', ['$scope', 'StorageService', function($scope, storage){
-
+    .controller('mainController', ['$scope', function($scope){
+      $scope.display = null;
     }]);
 
-})(window.angular, window.moment, window._);
+})(window.angular);

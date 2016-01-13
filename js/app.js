@@ -4,9 +4,10 @@
     $angular
     .module('app', [
         'jamfu',
-        'ui.router'
+        'ui.router',
+        'ngSanitize'
     ])
-    .controller('appController', ['$scope', 'StorageService', function($scope, storage) {
+    .controller('appController', ['$scope', function($scope) {
 
         $scope.headline = 'Cipher';
         $scope.icon = 'calculator';

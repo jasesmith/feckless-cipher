@@ -213,31 +213,18 @@ html, body, .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  display: flex; }
   .workspace .main {
     position: relative;
     overflow: auto;
-    -webkit-transition: -webkit-box-flex .3s ease-out;
-    -webkit-transition: -webkit-flex-grow .3s ease-out;
-            transition: -webkit-box-flex .3s ease-out;
-            transition: -ms-flex-positive .3s ease-out;
-            transition: flex-grow .3s ease-out;
-    -webkit-box-flex: 2;
-    -webkit-flex-grow: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    -webkit-flex-shrink: 1;
-        -ms-flex-negative: 1;
-            flex-shrink: 1;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-    padding: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     z-index: 1; }
 
 input,

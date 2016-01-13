@@ -1,0 +1,99 @@
+$accent: #00bcd4; // #fc1770; //
+.calculator {
+  display: flex;
+  flex-direction: column;
+  font-size: 14vmin;
+  flex: 1;
+}
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #efefef;
+  color: #555;
+  box-shadow: 0 .3em 1.2em -.35em #000;
+  line-height: 1;
+  box-sizing: content-box;
+  font-family: "DIN Alternate", "HelveticaNeue-Light", Helvetica, sans-serif;
+  font-weight: 200;
+  .lcd {
+    padding: .5em;
+    background: mix(#333, $accent, 95%) linear-gradient(-80deg, darken($accent, 25%), darken($accent, 35%));
+  	color: #fff;
+  	text-shadow: 0 0 .5em $accent;
+  	box-shadow: 1px 0 0 0 #555 inset, 0 0 1em 0 rgba(#000, .6) inset;
+    text-align: right;
+    overflow: auto;
+    flex: 0 0 auto;
+  }
+  .controls {
+    flex: 9;
+    display: flex;
+    flex-direction: row;
+    .group {
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+      &:last-of-type {
+        flex: 1;
+      }
+    }
+    .block {
+      display: flex;
+      &.digits {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        flex: 4;
+      }
+      &.modifiers {
+        background: rgba(#000, .05);
+        flex-direction: row;
+        flex: 1;
+      }
+      &.operators {
+        background: rgba($accent, .5);
+        color: #FFF;
+        flex-direction: column;
+        flex: 1;
+      }
+    }
+    .control {
+      font-size: 1em;
+      width: auto;
+      height: auto;
+      position: relative;
+      transition: background .1s;
+      flex: 1 1 33.3334%;
+      &.key-clr {
+        background: rgba(#000, .05);
+      }
+      &.key-eql {
+        background: rgba(darken($accent, 5%), .5);
+      }
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50%;
+        transform: translate(-50%, -50%);
+        transition: font-size .1s;
+      }
+      sup {
+        font-size: 60%;
+      }
+      &:hover {
+        background: rgba(#FFF, .4);
+      }
+      &:active {
+        background: rgba(#000, .2);
+        span {
+          font-size: 40%;
+        }
+      }
+    }
+  }
+  .operators {
+    display: flex;
+    flex-direction: column;
+  }
+}

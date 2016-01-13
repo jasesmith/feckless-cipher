@@ -1,0 +1,169 @@
+.calculator {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14vmin;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.calculator-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #efefef;
+  color: #555;
+  box-shadow: 0 .3em 1.2em -.35em #000;
+  line-height: 1;
+  box-sizing: content-box;
+  font-family: "DIN Alternate", "HelveticaNeue-Light", Helvetica, sans-serif;
+  font-weight: 200; }
+  .calculator-body .lcd {
+    padding: .5em;
+    background: #303a3b -webkit-linear-gradient(170deg, #004b55, #001e22);
+    background: #303a3b linear-gradient(-80deg, #004b55, #001e22);
+    color: #fff;
+    text-shadow: 0 0 0.5em #00bcd4;
+    box-shadow: 1px 0 0 0 #555 inset, 0 0 1em 0 rgba(0, 0, 0, 0.6) inset;
+    text-align: right;
+    overflow: auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
+  .calculator-body .controls {
+    -webkit-box-flex: 9;
+    -webkit-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .calculator-body .controls .group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-flex: 3;
+      -webkit-flex: 3;
+          -ms-flex: 3;
+              flex: 3; }
+      .calculator-body .controls .group:last-of-type {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+    .calculator-body .controls .block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .calculator-body .controls .block.digits {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-flex: 4;
+        -webkit-flex: 4;
+            -ms-flex: 4;
+                flex: 4; }
+      .calculator-body .controls .block.modifiers {
+        background: rgba(0, 0, 0, 0.05);
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+      .calculator-body .controls .block.operators {
+        background: rgba(0, 188, 212, 0.5);
+        color: #FFF;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+    .calculator-body .controls .control {
+      font-size: 1em;
+      width: auto;
+      height: auto;
+      position: relative;
+      -webkit-transition: background .1s;
+              transition: background .1s;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 33.3334%;
+          -ms-flex: 1 1 33.3334%;
+              flex: 1 1 33.3334%; }
+      .calculator-body .controls .control.key-clr {
+        background: rgba(0, 0, 0, 0.05); }
+      .calculator-body .controls .control.key-eql {
+        background: rgba(0, 165, 187, 0.5); }
+      .calculator-body .controls .control span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        -webkit-transition: font-size .1s;
+                transition: font-size .1s; }
+      .calculator-body .controls .control sup {
+        font-size: 60%; }
+      .calculator-body .controls .control:hover {
+        background: rgba(255, 255, 255, 0.4); }
+      .calculator-body .controls .control:active {
+        background: rgba(0, 0, 0, 0.2); }
+        .calculator-body .controls .control:active span {
+          font-size: 40%; }
+  .calculator-body .operators {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+/*# sourceMappingURL=calculator.css.map */
